@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đức Mạnh - Kỹ sư cơ khí chế tạo máy</title>
+    <link rel="icon" href="https://i.pinimg.com/564x/d0/d5/19/d0d519b384c2804a667d1bb5df1c09a4.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            flex: 1;
+        }
+        header {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            color: #fff;
+        }
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding-top: 50px;
+        }
+        header .content h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 20px 0 0;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .avatar {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0073e6;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .contact-icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        h2 {
+            color: #004080;
+        }
+        .title-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="Video/Header.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Nguyễn Đức Mạnh</h1>
+            <ul>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main" id="about">
+            <img src="https://i.pinimg.com/564x/9d/38/95/9d389551d9a0c66825121d01f25cb7b7.jpg" alt="Avatar" class="avatar">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Tôi là Nguyễn Đức Mạnh</p>
+        </div>
+        <div class="main" id="skills">
+            <h2>Kỹ năng</h2>
+            <p>Nội dung đang được cập nhật...</p>
+        </div>
+        <div class="main" id="projects">
+            <h2>Dự án</h2>
+            <p>Nội dung đang được cập nhật...</p>
+        </div>
+        <div class="main" id="contact">
+            <h2>Liên hệ</h2>
+            <ul class="contact-info">
+                <li><img src="https://i.pinimg.com/564x/60/6f/cf/606fcf646f2f1ab3c95fbb1ce1888064.jpg" alt="Phone Icon" class="contact-icon"><a href="tel:0365230767">0365230767</a></li>
+                <li><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Email Icon" class="contact-icon"><a href="mailto:ducmanh122k1@gmail.com">ducmanh122k1@gmail.com</a></li>
+                <li><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=122&h=122&c=7&o=6&oif=webp&pid=SANGAM" alt="Facebook Icon" class="contact-icon"><a href="https://www.facebook.com/manh.nd001">Nguyễn Đức Mạnh</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nguyễn Đức Mạnh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
