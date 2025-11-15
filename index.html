@@ -1,172 +1,180 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyễn Đức Mạnh - Kỹ sư cơ khí chế tạo máy</title>
-    <link rel="icon" href="https://i.pinimg.com/564x/d0/d5/19/d0d519b384c2804a667d1bb5df1c09a4.jpg" type="image/x-icon">
+    
+    <!-- Tải Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Favicon (sử dụng placeholder, bạn nên thay bằng link favicon của bạn) -->
+    <link rel="icon" href="https://placehold.co/32x32/00529B/FFFFFF?text=M" type="image/png">
+    
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            flex: 1;
-        }
-        header {
-            position: relative;
-            height: 300px;
-            overflow: hidden;
-            color: #fff;
-        }
-        header video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-        }
-        header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-        header .content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding-top: 50px;
-        }
-        header .content h1 {
-            margin: 0;
-            font-size: 3rem;
-            text-transform: uppercase;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            margin: 20px 0 0;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        .main {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #add8e6;
-            color: #fff;
-            text-align: center;
-            padding: 1px 0;
-            margin-top: 20px;
-        }
-        .avatar {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #0073e6;
-        }
-        .contact-info {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li {
-            margin: 10px 0;
-        }
-        .contact-info a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .contact-icon {
-            width: 20px;
-            vertical-align: middle;
-            margin-right: 8px;
-        }
-        h2 {
-            color: #004080;
-        }
-        .title-image {
-            width: 100%;
-            height: auto;
+        /* Thêm một font chữ đẹp (Inter) từ Tailwind */
+        @import url('https://rsms.me/inter/inter.css');
+        html {
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body>
-    <header>
-        <video autoplay muted loop>
-            <source src="Header.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>Nguyễn Đức Mạnh</h1>
-            <ul>
-                <li><a href="#contact">Liên hệ</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#skills">Kỹ năng</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
-            </ul>
-        </div>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- 
+      HEADER (HERO SECTION)
+      Thay thế video bằng gradient hiện đại, nhẹ và tải nhanh.
+    -->
+    <header class="bg-gradient-to-r from-blue-800 to-gray-900 text-white text-center py-20 px-4 shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-wider">Nguyễn Đức Mạnh</h1>
+        <p class="text-xl md:text-2xl text-blue-200 mt-2">Kỹ sư cơ khí chế tạo máy</p>
     </header>
-    <div class="container">
-        <div class="main" id="about">
-            <img src="https://i.pinimg.com/564x/9d/38/95/9d389551d9a0c66825121d01f25cb7b7.jpg" alt="Avatar" class="avatar">
-            <h2>Giới thiệu</h2>
-            <p>Xin chào! Tôi là Nguyễn Đức Mạnh</p>
-        </div>
-        <div class="main" id="skills">
-            <h2>Kỹ năng</h2>
-            <p>Nội dung đang được cập nhật...</p>
-        </div>
-        <div class="main" id="projects">
-            <h2>Dự án</h2>
-            <p>....</p>
-        </div>
-        <div class="main" id="contact">
-            <h2>Liên hệ</h2>
-            <ul class="contact-info">
-                <li><img src="https://i.pinimg.com/564x/60/6f/cf/606fcf646f2f1ab3c95fbb1ce1888064.jpg" alt="Phone Icon" class="contact-icon"><a href="tel:0365230***">0365230***</a></li>
-                <li><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Email Icon" class="contact-icon"><a href="mailto:ducmanh122k1@gmail.com">ducmanh122k1@gmail.com</a></li>
-                <li><img src="https://th.bing.com/th?id=OSK.6959dc0a9ea9a17f0991e79b4e692080&w=122&h=122&c=7&o=6&oif=webp&pid=SANGAM" alt="Facebook Icon" class="contact-icon"><a href="https://www.facebook.com/manh.nd001">Nguyễn Đức Mạnh</a></li>
+
+    <!-- 
+      THANH ĐIỀU HƯỚNG (NAVBAR)
+      Tách riêng ra, "dính" (sticky) ở đầu trang khi cuộn.
+    -->
+    <nav class="sticky top-0 bg-white shadow-md z-40">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- 
+              Sử dụng flex-wrap để tự động xuống hàng trên di động nếu không đủ chỗ
+            -->
+            <ul class="flex flex-wrap justify-center font-medium">
+                <li><a href="#about" class="block py-4 px-5 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">Giới thiệu</a></li>
+                <li><a href="#skills" class="block py-4 px-5 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">Kỹ năng</a></li>
+                <li><a href="#projects" class="block py-4 px-5 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">Dự án</a></li>
+                <li><a href="#contact" class="block py-4 px-5 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors">Liên hệ</a></li>
             </ul>
         </div>
-    </div>
-    <footer>
+    </nav>
+
+    <!-- 
+      NỘI DUNG CHÍNH (MAIN CONTENT)
+      Container được thiết lập responsive (max-w-4xl mx-auto).
+      - CẬP NHẬT: Thêm 'relative' và 'z-30' để đảm bảo nội dung (và avatar)
+        luôn nằm BÊN DƯỚI thanh điều hướng (nav) có z-40.
+    -->
+    <main class="container max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 flex-1 relative z-30">
+        
+        <!-- 
+          Mỗi section (trước đây là .main)
+          - Dùng thẻ <section> cho ngữ nghĩa tốt hơn.
+          - Thêm 'scroll-mt-20' để khi nhấn link neo, nội dung không bị che bởi navbar.
+        -->
+        <section class="bg-white rounded-xl shadow-lg p-6 sm:p-8 mb-8 scroll-mt-20" id="about">
+            <!-- 
+              Thiết kế Avatar hiện đại
+              - CẬP NHẬT: Đã gỡ bỏ '-mt-24' để đưa avatar xuống
+                nằm gọn bên trong phần Giới thiệu.
+            -->
+            <img 
+              src="https://placehold.co/160x160/e0e7ff/3341a9?text=N%C4%90M" 
+              alt="Avatar Nguyễn Đức Mạnh" 
+              class="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-lg mb-6 relative"
+              onerror="this.src='https://placehold.co/160x160/e0e7ff/3341a9?text=Error'"
+            >
+            
+            <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Giới thiệu</h2>
+            <p class="text-lg text-gray-700 leading-relaxed text-center max-w-2xl mx-auto">
+                Xin chào! Tôi là Nguyễn Đức Mạnh, một Kỹ sư Cơ khí Chế tạo máy với đam mê thiết kế, tối ưu hóa quy trình và áp dụng công nghệ mới vào sản xuất. Tôi luôn tìm kiếm cơ hội để học hỏi và phát triển bản thân trong môi trường chuyên nghiệp.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-6 sm:p-8 mb-8 scroll-mt-20" id="skills">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Kỹ năng chuyên môn</h2>
+            <!-- 
+              Sử dụng Grid Layout để hiển thị danh sách kỹ năng
+              - Tự động chia 2 cột trên di động (grid-cols-2)
+              - Chia 4 cột trên máy tính (md:grid-cols-4)
+            -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">AutoCAD</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">SolidWorks</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">Phân tích FEA</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">Tối ưu quy trình</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">Đọc bản vẽ kỹ thuật</span>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <span class="font-semibold text-blue-700">Quản lý dự án</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-6 sm:p-8 mb-8 scroll-mt-20" id="projects">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Dự án</h2>
+            <!-- 
+              Trình bày dự án theo dạng thẻ (card)
+            -->
+            <div class="space-y-6">
+                <!-- Dự án 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Máy bắn vít 3D BTD24</h3>
+                    <p class="text-gray-600 mb-4">
+                        Dự án thực hiện mô hình hóa 3D, mô phỏng lắp ráp và phân tích chi tiết cho máy bắn vít model BTD24. (Bạn có thể cập nhật mô tả này).
+                    </p>
+                    <div>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Thiết kế 3D</span>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">SolidWorks</span>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full">Mô phỏng</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-6 sm:p-8 scroll-mt-20" id="contact">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">Liên hệ</h2>
+            <div class="max-w-md mx-auto">
+                <ul class="space-y-4">
+                    <!-- 
+                      Thay thế <img> bằng SVG inline
+                      - Sắc nét, tải nhanh, dễ dàng đổi màu bằng text-blue-600
+                    -->
+                    
+                    <!-- Phone -->
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                        <a href="tel:0365230***" class="text-lg text-gray-700 hover:text-blue-700 hover:underline">0365230***</a>
+                    </li>
+                    
+                    <!-- Email -->
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        <a href="mailto:ducmanh122k1@gmail.com" class="text-lg text-gray-700 hover:text-blue-700 hover:underline">ducmanh122k1@gmail.com</a>
+                    </li>
+                    
+                    <!-- Facebook -->
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                           <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
+                        </svg>
+                        <a href="https://www.facebook.com/manh.nd001" target="_blank" rel="noopener noreferrer" class="text-lg text-gray-700 hover:text-blue-700 hover:underline">Nguyễn Đức Mạnh</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      FOOTER
+      - Dùng 'mt-auto' để đẩy footer xuống cuối trang (kết hợp với 'flex flex-col min-h-screen' trên body).
+    -->
+    <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-auto">
         <p>&copy; 2024 Nguyễn Đức Mạnh. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
